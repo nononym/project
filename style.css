@@ -1,19 +1,146 @@
 html {
     box-sizing: border-box;
     height: 100%;
+    width: 100%;
 }
 
 body {
    display: flex;
    flex-direction: column;
    min-height: 100vh;
+   margin: 0;
 }
+
 
 .header {
    display: flex;
-   
+   justify-content: space-around;
+   align-items: center;
+   background-color: #1f2937;
+}
+
+.header .header-logo {
+    color: #f9faf8; 
+}
+
+.right-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.second {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    min-height: 450px;
+}
+
+.second img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px;
+  
+}
+
+.third img {
+    width: 150px;
+    border: 5px solid #3882f6;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.third .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 0 1 100px;
+}
+
+.third .card-container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 200px;
+    height: auto;
+}
+
+.quote-container {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container .quote {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    flex: 0 1 auto;
+    color: #1f2937;
+}
+
+.quote-container p {
+    font-style: italic;
+    font-size: 26px;
+}
+
+.quote-container h3 {
+    align-self: flex-end;
+}
+
+.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.four .call-container{
+    background-color: #3882f6;
+    padding: 16px 36px;
+    border-radius: 10px;
+    width: 70%;
+    color: #e5e7eb;
+    display: flex;
+    gap: 8px;
+    max-height: 150px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.four .call-container .call p {
+    margin-top: -10px;
+}
+
+.four button {
+    background-color: #3882f6;
+    color:#e5e7eb;
+    border: 3px solid #eaeff3;
+    border-radius: 5px;
+    padding: 5px 15px;
 }
 
 .footer {
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2937;
+  font-size: 18px;
+  color: #e5e7eb;
+  height: 70px;
 }
+
